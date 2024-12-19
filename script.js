@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let userSize = 16; // Default size (16x16)
 
-    function randomRgba() {
-        let o = Math.round, r = Math.random, s = 255;
-        return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
-    }
+    // function randomRgba() {
+    //     let o = Math.round, r = Math.random, s = 255;
+    //     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+    // }
     
     function createGrid() {
         container.innerHTML = '';
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             div.style.boxSizing = 'border-box';
             
             div.addEventListener("mouseover", () => {
-                div.style.backgroundColor = randomRgba();
+                div.style.backgroundColor = "blue";
             });
             
             container.appendChild(div);
