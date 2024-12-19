@@ -5,6 +5,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;       
+    height: 100vh;
 }
 
 #container {
@@ -13,7 +14,6 @@ body {
     height: 664px;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -24,4 +24,14 @@ body {
     border-width: 2px;
     height: 37.5px;
     width: 37.5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #f0f0f0; /* Optional: you can add a background color to the footer */
+    width: 100%;
+    padding: 10px;
 }
