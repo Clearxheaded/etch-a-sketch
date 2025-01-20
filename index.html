@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="header">
         <h1>Etch a Sketch Drawing Pad</h1>
     </div>
-    <button id="size-btn">Change the grid size</button>
+    <div class="controls">
+        <button id="size-btn" class="control-btn">Grid Size</button>
+        <input type="color" id="color-picker" value="#3b82f6">
+        <button id="rainbow-btn" class="control-btn">Rainbow Mode</button>
+        <button id="eraser-btn" class="control-btn">Eraser</button>
+        <button id="clear-btn" class="control-btn">Clear</button>
+    </div>
+    <div class="templates">
+        <button class="template-btn" data-template="heart">❤️ Heart</button>
+        <button class="template-btn" data-template="smiley">😊 Smiley</button>
+        <button class="template-btn" data-template="star">⭐ Star</button>
+    </div>
     <div id="container">
         <!-- Grid of divs goes here -->
     </div>
@@ -19,4 +32,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
